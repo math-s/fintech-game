@@ -1,0 +1,231 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.kicker {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.status-chip {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 8px;
+  color: #0f172a;
+}
+
+.stat-helper {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.panel-summary {
+  text-align: right;
+}
+
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+}
+
+.value {
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 4px;
+}
+
+.muted {
+  color: #64748b;
+  margin: 0;
+}
+
+.receivables-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.receivables-table th,
+.receivables-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+}
+
+.receivables-table th {
+  text-align: right;
+  color: #475569;
+  font-weight: 600;
+}
+
+.receivables-table td {
+  text-align: right;
+  color: #0f172a;
+}
+
+.receivables-table th:first-child,
+.receivables-table td:first-child {
+  text-align: left;
+}
+
+.receivables-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.risk-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.risk-bar {
+  width: 100%;
+  height: 6px;
+  background: #fee2e2;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.risk-bar span {
+  display: block;
+  height: 100%;
+  background: #ef4444;
+}
+
+.loan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.loan-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.loan-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.loan-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0;
+  color: #0f172a;
+}
+
+.loan-subtle {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.loan-metrics {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.pill {
+  background: #e2e8f0;
+  color: #0f172a;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 20px;
+  color: #475569;
+}
+
+.bullets li {
+  margin: 6px 0;
+}
+
+@media (max-width: 720px) {
+  .panel-summary {
+    text-align: left;
+  }
+
+  .loan-metrics {
+    flex-direction: column;
+  }
+
+  .risk-cell {
+    align-items: flex-start;
+  }
+}
