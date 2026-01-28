@@ -1,4 +1,4 @@
-import { ReceivableBucket } from '../game/types'
+import type { ReceivableBucket } from '../game/types'
 import { formatCurrency, formatMonth, formatPercent } from '../game/format'
 
 type ReceivablesTableProps = {

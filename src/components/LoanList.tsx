@@ -1,4 +1,4 @@
-import { Loan } from '../game/types'
+import type { Loan } from '../game/types'
 import {
   getCombinedRisk,
   getNextInstallment,

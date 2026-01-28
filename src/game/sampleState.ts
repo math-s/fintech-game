@@ -1,4 +1,4 @@
-import { GameState, Installment, Loan, RiskProfile } from './types'
+import type { GameState, Installment, Loan, RiskProfile } from './types'
 
 const toIsoDate = (date: Date) => date.toISOString().slice(0, 10)
 

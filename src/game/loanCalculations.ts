@@ -1,4 +1,4 @@
-import { Installment, InstallmentStatus, Loan } from './types'
+import type { Installment, InstallmentStatus, Loan } from './types'
 
 const openStatuses: InstallmentStatus[] = ['scheduled', 'missed']
 

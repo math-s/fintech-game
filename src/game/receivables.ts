@@ -1,4 +1,4 @@
-import { Loan, ReceivableBucket } from './types'
+import type { Loan, ReceivableBucket } from './types'
 import { getCombinedRisk, getOpenInstallments } from './loanCalculations'
 
 export const buildReceivables = (loans: Loan[], asOfDate: string) => {
